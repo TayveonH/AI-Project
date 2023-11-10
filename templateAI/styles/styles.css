@@ -344,6 +344,42 @@ section {
   background-color: var(--color-grey-5);
   transform: translateX(-50%);
 }
+/* Chatbox */
+/* Position the chat icon in the bottom-right corner */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Customize the background color */
+  color: #fff; /* Customize the icon color */
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Style the chat icon hover effect */
+.chat-icon:hover {
+  background-color: #0056b3; /* Customize the hover background color */
+}
+
+/* Position the chatbot container (hidden by default) */
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px; /* Customize the width as needed */
+  height: 400px; /* Customize the height as needed */
+  background-color: #12181b; /* Customize the chatbox background color */
+  border: 1px solid #ccc; /* Add a border if desired */
+  border-radius: 10px;
+  display: none; /* Hide the chatbox by default */
+  overflow: hidden;
+}
 
 /*Timeline*/
 .timeline {

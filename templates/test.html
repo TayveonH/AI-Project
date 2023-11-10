@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription</title>
+</head>
+<body>
+    <h1>Audio Transcription</h1>
+    <form action="/transcribe" method="post" enctype="multipart/form-data">
+        <label for="audioFile">Choose an audio file:</label>
+        <input type="file" name="file" accept=".mp3" id="audioFile">
+        <br>
+        <input type="submit" value="Transcribe">
+    </form>
+
+    {% if transcription %}
+        <h2>Transcription Result</h2>
+        <p>{{ transcription }}</p>
+    {% endif %}
+</body>
+</html>

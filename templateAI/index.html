@@ -31,6 +31,27 @@
             AI</span>
           is here to help you!
         </h1>
+        <div class="chat-icon" onclick="toggleChatbox()">
+          <i class="fas fa-comment-alt"></i> <!-- You can use a chat icon here -->
+        </div>
+        
+        <div class="chatbot-container" id="chatbot-container">
+          <div class="chatbot">
+            <div class="chatbot-header">
+              AI Chatbot
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+              <p>Welcome! How can I help you with AI?</p>
+            </div>
+            <div class="chatbot-input">
+              <input type="text" id="user-input" placeholder="Type your message..." />
+              <button onclick="sendMessage()">Send</button>
+              <button id="minimize-chatbox" onclick="toggleChatbox()">Minimize</button>
+            </div>
+          </div>
+        </div>
+        
+        
         <p>
           Unlock Your Potential with AI: Why You Should Learn About Artificial
           Intelligence Artificial Intelligence (AI) is not just the future;
@@ -487,6 +508,7 @@
     <i class="fas fa-adjust"></i>
   </div>
   <script src="app.js"></script>
+  <script src="chatbot.js"></script>
 </body>
 
 </html>
