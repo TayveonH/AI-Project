@@ -136,7 +136,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 15px #191d2b;
   transition: all 0.1s ease-in-out;
 }
 .theme-btn:active {
@@ -175,7 +175,7 @@ section {
   height: 90%;
   width: 68%;
   margin-left: 4rem;
-  background-color: var(--color-black);
+  background-color: rgba(25, 29, 43, 0);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
