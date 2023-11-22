@@ -2,7 +2,7 @@ from pathlib import Path
 import openai
 
 # Set your OpenAI API key
-openai.api_key = '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' 
+openai.api_key = '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' 
 
 # Define the path to the speech file
 speech_file_path = Path(__file__).parent / "speech.mp3"
@@ -11,7 +11,7 @@ speech_file_path = Path(__file__).parent / "speech.mp3"
 response = openai.audio.speech.create(
     model="tts-1",
     voice="alloy",
-    input="I love Python, OpenAI is so helpful",
+    input="My name is Mr Dan Wu and Tayveon, Aleks and Kevin are the best students I could ask for!",
 )
 
 # Save the generated speech to a file
